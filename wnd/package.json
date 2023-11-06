@@ -1,0 +1,43 @@
+{
+  "name": "wnd",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.16",
+    "@heroicons/vue": "^2.0.18",
+    "@stripe/stripe-js": "^2.1.11",
+    "@vue-stripe/vue-stripe": "^4.5.0",
+    "axios": "^1.6.0",
+    "pinia": "^2.1.7",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.39.0",
+    "v-tooltip": "^2.1.3",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.6.4",
+    "vue-router": "^4.2.5",
+    "vue-star-rating": "^1.7.0",
+    "vue-stripe-elements-plus": "^1.0.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^18.18.5",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/babel-plugin-jsx": "^1.1.5",
+    "@vue/babel-preset-jsx": "^1.4.0",
+    "@vue/tsconfig": "^0.4.0",
+    "autoprefixer": "^10.4.16",
+    "npm-run-all2": "^6.1.1",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "~5.2.0",
+    "vite": "^4.4.11",
+    "vue-tsc": "^1.8.19"
+  }
+}
